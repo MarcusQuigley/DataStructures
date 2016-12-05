@@ -11,6 +11,15 @@ namespace DataStructures.LinkedList
         private AnLinkedListNode<T> head;
         private AnLinkedListNode<T> tail;
 
+        public AnLinkedListNode<T> Head
+        {
+            get { return head; }
+        }
+        public AnLinkedListNode<T> Tail
+        {
+            get { return tail; }
+        }
+
         public void Add(T item)
         {
             AddLast(item);   
