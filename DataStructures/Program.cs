@@ -1,4 +1,5 @@
-﻿using DataStructures.LinkedList;
+﻿using DataStructures.Arrays;
+using DataStructures.LinkedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            TestLinkedList();
+            //TestLinkedList();
+            TestArray();
             Console.Read();
         }
 
@@ -59,6 +61,29 @@ namespace DataStructures
             en2 = list.GetEnumerator();
             while (en2.MoveNext())
                 Console.WriteLine(en2.Current);
+            Console.WriteLine("---");
+        }
+
+        static void TestArray()
+        {
+            MyArray<int> arr = new MyArray<int>();
+
+            arr.Add(2);
+            arr.Add(1);
+            arr.Add(4);
+            arr.Add(7);
+            arr.Add(3);
+
+            IEnumerator<int> en = arr.GetEnumerator();
+            while (en.MoveNext())
+                Console.WriteLine(en.Current);
+            Console.WriteLine("---");
+            arr.RemoveAt(4);
+
+              en = arr.GetEnumerator();
+
+            while (en.MoveNext())
+                Console.WriteLine(en.Current);
             Console.WriteLine("---");
         }
     }
