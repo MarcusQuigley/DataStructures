@@ -1,5 +1,6 @@
 ﻿using DataStructures.Arrays;
 using DataStructures.LinkedList;
+using DataStructures.Trees;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,25 @@ namespace DataStructures
         static void Main(string[] args)
         {
             //TestLinkedList();
-            TestArray();
+           // TestArray();
+            TestBinaryTree();
             Console.Read();
+        }
+
+        private static void TestBinaryTree()
+        {
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Add(8);
+            tree.Add(4);
+            tree.Add(2);
+            tree.Add(3);
+            tree.Add(10);
+            tree.Add(6);
+            tree.Add(7);
+
+            Console.WriteLine("Tree contains 6?: {0}", tree.Contains(6));
+            Console.WriteLine("Tree contains 16?: {0}", tree.Contains(16));
+            Console.WriteLine("Tree contains 10?: {0}", tree.Contains(10));
         }
 
         static void TestLinkedList()
