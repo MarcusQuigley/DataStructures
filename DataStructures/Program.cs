@@ -1,5 +1,6 @@
 ﻿using DataStructures.Arrays;
 using DataStructures.LinkedList;
+using DataStructures.Sorting_Algorithms;
 using DataStructures.Trees;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,37 @@ namespace DataStructures
         static void Main(string[] args)
         {
             //TestLinkedList();
-           // TestArray();
-            TestBinaryTree();
+            // TestArray();
+            // TestBinaryTree();
+            //TestBubbleSort();
+            TestInsertionSort();
             Console.Read();
+        }
+
+        private static void TestInsertionSort()
+        {
+            int[] items = new int[] { 3, 7, 4, 4, 6, 5, 8 };
+            DisplayArray<int>(items);
+            Console.WriteLine();
+            new InsertionSort<int>().Sort(items);
+            DisplayArray<int>(items);
+        }
+
+        private static void TestBubbleSort()
+        {
+            int[] items = new int[] {3,7,4,4,6,5,8 };
+            DisplayArray<int>(items);
+            Console.WriteLine();
+            new BubbleSort<int>().Sort(items);
+            DisplayArray<int>(items);
+        }
+
+      static  void DisplayArray<T>(T[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write("{0} ", array[i]);
+            }
         }
 
         private static void TestBinaryTree()
