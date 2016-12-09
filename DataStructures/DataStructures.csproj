@@ -52,6 +52,13 @@
     <Compile Include="Sorting Algorithms\InsertionSort.cs" />
     <Compile Include="StackQueue\Queue.cs" />
     <Compile Include="StackQueue\Stack.cs" />
+    <Compile Include="Testing\LinkedList\MyLinkedList.cs" />
+    <Compile Include="Testing\LinkedList\MyLsitNode.cs" />
+    <Compile Include="Testing\MyArray.cs" />
+    <Compile Include="Testing\Sorting Algs\Bubble.cs" />
+    <Compile Include="Testing\Sorting Algs\Insert.cs" />
+    <Compile Include="Testing\Tree\BinaryTree.cs" />
+    <Compile Include="Testing\Tree\TreeNode.cs" />
     <Compile Include="Trees\BinaryTree.cs" />
     <Compile Include="Trees\BinaryTreeNode.cs" />
   </ItemGroup>

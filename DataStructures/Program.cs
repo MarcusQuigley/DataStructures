@@ -1,6 +1,7 @@
 ﻿using DataStructures.Arrays;
 using DataStructures.LinkedList;
 using DataStructures.Sorting_Algorithms;
+using DataStructures.Testing.Sorting_Algs;
 using DataStructures.Trees;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,8 @@ namespace DataStructures
             int[] items = new int[] { 3, 7, 4, 4, 6, 5, 8 };
             DisplayArray<int>(items);
             Console.WriteLine();
-            new InsertionSort<int>().Sort(items);
+            //new InsertionSort<int>().Sort(items);
+            new Insert<int>().Sort(items);
             DisplayArray<int>(items);
         }
 
