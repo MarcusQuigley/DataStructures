@@ -44,13 +44,23 @@
     <Compile Include="Array\MyArray.cs" />
     <Compile Include="LinkedList\AnLinkedList.cs" />
     <Compile Include="LinkedList\AnLinkedListNode.cs" />
-    <Compile Include="LinkedList\DoubleLinkedList.cs" />
-    <Compile Include="LinkedList\DoubleLinkedListNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackQueue\Deque.cs" />
+    <Compile Include="Sets\Set.cs" />
+    <Compile Include="Sorting Algorithms\BaseSort.cs" />
+    <Compile Include="Sorting Algorithms\BubbleSort.cs" />
+    <Compile Include="Sorting Algorithms\InsertionSort.cs" />
     <Compile Include="StackQueue\Queue.cs" />
     <Compile Include="StackQueue\Stack.cs" />
+    <Compile Include="Testing\LinkedList\MyLinkedList.cs" />
+    <Compile Include="Testing\LinkedList\MyLsitNode.cs" />
+    <Compile Include="Testing\MyArray.cs" />
+    <Compile Include="Testing\Sorting Algs\Bubble.cs" />
+    <Compile Include="Testing\Sorting Algs\Insert.cs" />
+    <Compile Include="Testing\Tree\BinaryTree.cs" />
+    <Compile Include="Testing\Tree\TreeNode.cs" />
+    <Compile Include="Trees\BinaryTree.cs" />
+    <Compile Include="Trees\BinaryTreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

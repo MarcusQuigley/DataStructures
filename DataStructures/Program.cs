@@ -1,5 +1,8 @@
 ﻿using DataStructures.Arrays;
 using DataStructures.LinkedList;
+using DataStructures.Sorting_Algorithms;
+using DataStructures.Testing.Sorting_Algs;
+using DataStructures.Trees;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +16,54 @@ namespace DataStructures
         static void Main(string[] args)
         {
             //TestLinkedList();
-            TestArray();
+            // TestArray();
+            // TestBinaryTree();
+            //TestBubbleSort();
+            TestInsertionSort();
             Console.Read();
+        }
+
+        private static void TestInsertionSort()
+        {
+            int[] items = new int[] { 3, 7, 4, 4, 6, 5, 8 };
+            DisplayArray<int>(items);
+            Console.WriteLine();
+            //new InsertionSort<int>().Sort(items);
+            new Insert<int>().Sort(items);
+            DisplayArray<int>(items);
+        }
+
+        private static void TestBubbleSort()
+        {
+            int[] items = new int[] {3,7,4,4,6,5,8 };
+            DisplayArray<int>(items);
+            Console.WriteLine();
+            new BubbleSort<int>().Sort(items);
+            DisplayArray<int>(items);
+        }
+
+      static  void DisplayArray<T>(T[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write("{0} ", array[i]);
+            }
+        }
+
+        private static void TestBinaryTree()
+        {
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Add(8);
+            tree.Add(4);
+            tree.Add(2);
+            tree.Add(3);
+            tree.Add(10);
+            tree.Add(6);
+            tree.Add(7);
+
+            Console.WriteLine("Tree contains 6?: {0}", tree.Contains(6));
+            Console.WriteLine("Tree contains 16?: {0}", tree.Contains(16));
+            Console.WriteLine("Tree contains 10?: {0}", tree.Contains(10));
         }
 
         static void TestLinkedList()
