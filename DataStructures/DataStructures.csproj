@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Array\MyArray.cs" />
+    <Compile Include="Hash Table\HashTableArrayNode.cs" />
+    <Compile Include="Hash Table\HashTableNodePair.cs" />
     <Compile Include="LinkedList\AnLinkedList.cs" />
     <Compile Include="LinkedList\AnLinkedListNode.cs" />
     <Compile Include="Program.cs" />

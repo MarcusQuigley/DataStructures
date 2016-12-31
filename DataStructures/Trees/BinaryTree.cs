@@ -27,12 +27,8 @@ namespace DataStructures.Trees
                 Count++;
                 return;
             }
-            //BinaryTreeNode<T> node = new BinaryTreeNode<T>(value);
-            //node = _head;
-
-            AddTo(_head, value);
-
-        }
+             AddTo(_head, value);
+         }
 
         // Recursive add algorithm. 
         private void AddTo(BinaryTreeNode<T> node, T value)
